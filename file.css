@@ -3,8 +3,8 @@ body
     background-color:Silver
    ;
 }
-.quiz1 {border: 2px black;
-       width: 30%;
+.quiz1 {border: 2px solid black;
+       width: 20%;
        margin: auto;
        padding: 20px;
 }
