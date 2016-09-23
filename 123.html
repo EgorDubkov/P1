@@ -1,0 +1,41 @@
+<html>
+<script type= "text/javascript">
+    function show_pic() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+    }
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+    }
+</script>
+<body>
+<table border="1">
+<tr>
+<td onclick="show_text()"> Text </td>
+<td onclick="show_pic()"> Picture </td>
+</tr>
+<td  colspan="2">
+<div id="c1">Montenegro</div>
+<div id="c2"><img src="m.jpg"></div>
+</td>
+</table>
+<head>
+<link rel="stylesheet" type="text/css" href="file.css">
+</head>
+<body>
+<div class="quiz1">
+<div class="question">How old are you?</div>
+<input type="radio" name="answer">12</input>
+<input type="radio" name="answer">18</input>
+<input type="radio" name="answer">22</input>
+<input type="radio" name="answer">16</input>
+<button>Confirm</button>
+</div>
+</body>
+</html>
