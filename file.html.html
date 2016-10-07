@@ -1,0 +1,80 @@
+<html>
+<script type= "text/javascript">
+    function show_pic() {
+        alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+    }
+
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+    }
+
+
+    function check() {
+        q1elem = document.getElementById("q1");
+        if (q1elem.checked) {
+            alert('Молодец')
+        } else {
+            alert('Храбрец')
+        };
+        reselem = document.getElementById("res");
+        q3elem = document.getElementById("q3");
+        reselem.innerHTML = "Are you sure in " + q3elem.value + "?";
+
+    }
+
+</script>
+<body>
+<table border="1">
+<tr>
+<td onclick="show_text()"> Text </td>
+<td onclick="show_pic()"> Picture </td>
+</tr>
+<td  colspan="2">
+<div id="c1">Montenegro</div>
+<div id="c2"><img src="m.jpg"></div>
+</td>
+</table>
+<head>
+<link rel="stylesheet" type="text/css" href="file.css">
+</head>
+<div class="quiz1">
+<div class="question">How old are you?</div>
+<input type="radio" name="question1">12</input>
+<input type="radio" name="question1">18</input>
+<input type="radio" name="question1">22</input>
+<input type="radio" name="question1">16</input>
+<button>Confirm</button>
+</div>
+<div class="quiz2">
+<div class="question2">2+2?</div>
+<input type="radio" name="question2">2</input>
+<input type="radio" name="question2">3</input>
+<input type="radio" name="question2">4</input>
+<input type="radio" name="question2">6</input>
+<button>Confirm</button>
+</div>
+<div class="quiz3">
+<div class= question3 id=q3>Сколько?</div>
+<input type="text">
+<input type= button value="Check">
+<div id= "res"> Ответ </div>
+</div>
+<div class="quiz5">
+<div class="question4"> Yes?</div>
+<input type= button onclick="check()">
+</div>
+<input type= checkbox id=q1>
+<label for="q1">Привит от гриппа</label>
+</input type= checkbox>
+<input type= checkbox id=q2>
+<label for="q2">123123</label>
+</input type= checkbox>
+</body>
+</html>
